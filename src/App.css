@@ -1,22 +1,143 @@
+html {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main:hover {
+  opacity: 1;
+}
+
+
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.header {
+  color: #000;
+  font-weight: 7
+  00;
+  font-size: 2rem;
+  /* text-decoration: underline;
+  text-decoration-style: solid; */
+  font-family: 'Roboto Mono', monospace;
+  position: absolute;
+  z-index: 1000;
+  text-align: center;
+  width: 100%;
+  padding-top: 6%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* Buttons!! */
+
+
+.button-container {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.buttons {
+  padding: 1%;
+  padding-top: 15%;
+  width: 75%;
+  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #4682B4;
+  color: #5E54EA;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #E0FFFF;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #E0FFFF;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Open Sans', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  box-shadow: inset 0 0 0 4px #E0FFFF;
+  border: 1px solid #2F4F4F
+}
+
+.btn p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  margin: 0;
   color: white;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
-.App-link {
-  color: #09d3ac;
+@media only screen and (max-width: 670px) {
+  .btn {
+    margin: 6%;
+  }
 }

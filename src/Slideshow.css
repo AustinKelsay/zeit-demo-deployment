@@ -1,0 +1,79 @@
+.slide-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.real-slide-container{
+    width: 100%;
+    height: 100%;
+}
+
+.react-slideshow-container {
+    width: 100%;
+    height: 100%;
+}
+  
+  .each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  .each-fade {
+    display: flex;
+  }
+  
+  .each-fade .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .each-fade .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Fade in animation */
+  .image-container {
+    opacity: 0.9;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+        @keyframes fadein {
+            from { opacity: 0.3; }
+            to   { opacity: 0.9; }
+        }
+
+        /* Firefox < 16 */
+        @-moz-keyframes fadein {
+            from { opacity: 0.3; }
+            to   { opacity: 0.9; }
+        }
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {
+            from { opacity: 0.3; }
+            to   { opacity: 0.9; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0.3; }
+            to   { opacity: 0.9; }
+        }
+
+        /* Opera < 12.1 */
+        @-o-keyframes fadein {
+            from { opacity: 0.3; }
+            to   { opacity: 0.9; }
+        }
+  
