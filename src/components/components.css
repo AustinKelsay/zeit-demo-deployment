@@ -1,3 +1,9 @@
+/* Transition */
+
+.fade-in {
+    @include mui-fade(in, $duration: 10s);
+  }
+
 
 /* ABOUT */
 
@@ -46,7 +52,7 @@
 }
 
 .mission{
-    width: 75%;
+    width: 85%;
     margin: 1% auto;
     margin-top: 5%;
     font-family: 'Roboto Mono', monospace;
@@ -59,10 +65,16 @@
 }
 
 .icon {
-    border: 3px solid oldlace;
     border-radius: 25px;
     background-color: oldlace;
-}
+    box-shadow: 0px 0px 0px 3px oldlace;
+    transition: box-shadow 0.6s linear;
+    margin: 0.5em; /* Increased margin since the box-shado expands outside the element, like outline */
+  }
+  
+  .icon:hover { 
+    box-shadow: 0px 0px 0px 5px oldlace;
+ }
 
 /* Projects */
 

@@ -1,15 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
-  import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from 'react-social-icons';
+import {useSpring, animated, config} from "react-spring";
 import './components.css';
 
+//Add some boxshaddow to make these cards look better !!
+
 const About = () => {
+  const [isToggled, setToggled] = useState(false)
+
+  useEffect(() => {
+    setToggled(!isToggled);
+    console.log(1);
+  },[])
+
+  const fade = useSpring({
+    config: {
+      duration: 1300
+    },
+    opacity: isToggled ? 1 : 0
+  });
 
     return(
-        <div className='about'>
+        <animated.div style={fade} className='about'>
           <Card className='about-card'>
             <CardImg className='about-photo' src="./Me.jpg" />
             <CardBody>
@@ -35,7 +51,7 @@ const About = () => {
             </div>
 
           </div>
-        </div>
+        </animated.div>
     )
 }
 

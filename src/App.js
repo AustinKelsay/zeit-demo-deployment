@@ -13,7 +13,7 @@ function App() {
       <h1 className='header'>Austin Kelsay</h1>
 
       <Buttons />
-      <Component />
+      <Component className="component" />
       <Slideshow />
     </main>
   );

@@ -1,12 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import img from "./../Images/Ride-for-life.jpg";
 import { CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import {useSpring, animated, config} from "react-spring";
 import "./components.css";
 
 const Projects = () => {
+  const [isToggled, setToggled] = useState(false)
+
+    useEffect(() => {
+        setToggled(!isToggled);
+        console.log(1);
+    },[])
+
+  const fade = useSpring({
+    config: {
+      duration: 1300
+    },
+    opacity: isToggled ? 1 : 0
+  });
 
     return (
-        <div className="projects">
+        <animated.div style={fade} className="projects">
             <div className="project-box">
                 <a target="_blank" href="https://build-ride-for-life.netlify.com/">
                   <img className="project-img" src={img} />
@@ -45,7 +59,7 @@ const Projects = () => {
                 </CardText>
               </CardBody>
             </div>
-        </div>
+        </animated.div>
     )
 
 }
