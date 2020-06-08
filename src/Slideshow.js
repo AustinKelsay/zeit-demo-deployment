@@ -28,7 +28,7 @@ const fadeProperties = {
     console.log(`fade transition from ${oldIndex} to ${newIndex}`);
   }
 }
- 
+
 const Slideshow = () => {
 
   return (
