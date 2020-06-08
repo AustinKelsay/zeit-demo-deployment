@@ -19,7 +19,7 @@ const About = () => {
 
   const fade = useSpring({
     config: {
-      duration: 1300
+      duration: 4000
     },
     opacity: isToggled ? 1 : 0
   });
@@ -30,8 +30,8 @@ const About = () => {
             <CardImg className='about-photo' src="./Me.jpg" />
             <CardBody>
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
-                <CardSubtitle>Software Developer - Investor - Musician</CardSubtitle>
-                <CardText className='card-text'>I care about human consiousness and the betterment of human well being.</CardText>
+                <CardSubtitle>Web Developer - Bitcoiner - Musician</CardSubtitle>
+                <CardText className='card-text'>I care about human rights, privacy, freedom, and the betterment of human well being.</CardText>
             </CardBody>
           </Card>
 
@@ -45,9 +45,15 @@ const About = () => {
 
             <div className='mission'>
               <h4>My mission:</h4>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
               <h4>My history:</h4>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              </p>
             </div>
 
           </div>

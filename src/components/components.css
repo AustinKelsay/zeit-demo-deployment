@@ -23,13 +23,11 @@
 
 .about-card{
     width: 33%;
-    height: 100%;
     background-color: oldlace;
     border-right: 2px solid salmon;
 }
 
 .card-img{
-    height: 53%;
     width: 36%;
     border: 1px solid black;
     margin: 1% auto;
@@ -54,7 +52,7 @@
 .mission{
     width: 85%;
     margin: 1% auto;
-    margin-top: 5%;
+    margin-top: 2%;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 1rem;
