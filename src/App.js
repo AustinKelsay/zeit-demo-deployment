@@ -16,7 +16,7 @@ function App() {
           <Buttons cSelected={cSelected} setCSelected={setCSelected} />
           <Slideshow/>
           {
-            window.innerWidth < 945 ? <Component className='component-gradient' cSelected={cSelected} setCSelected={setCSelected} /> : null
+            window.innerWidth < 945 ? <Component cSelected={cSelected} setCSelected={setCSelected} /> : null
           }
       </main>
   );

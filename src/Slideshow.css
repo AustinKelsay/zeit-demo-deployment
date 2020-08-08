@@ -49,7 +49,15 @@
 @media (max-width: 630px){
   .slide-container{
     margin-top: 0%;
-    height: auto;
+  }
+}
+
+@media (max-width: 460px){
+  .buttons{
+    flex-direction: column;
+  }
+  .btn{
+    width: 45%;
   }
 }
 
