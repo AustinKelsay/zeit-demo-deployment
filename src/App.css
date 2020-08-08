@@ -222,6 +222,56 @@ main {
     margin-top: 8%;
   }
   .header{
-    margin-top: 3%;
+    padding-top: 6%;
+  }
+}
+
+@media (max-width: 630px){
+
+}
+
+@media (max-width: 460px){
+  .buttons{
+    flex-direction: column;
+    margin-top: 2%;
+  }
+  .btn{
+    width: 40%;
+  }
+  .header{
+    padding-top: 3%;
+  }
+}
+
+@media (max-width: 350px){
+  .btn .btn-text{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 335px){
+  .btn .btn-text{
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px){
+  .btn .btn-text{
+    font-size: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 280px){
+  .btn .btn-text{
+    padding: 0% auto;
+    font-size: 0.4rem;
+    text-align: center;
+  }
+  .buttons{
+    margin-top: 20%;
+    height: 100%;
   }
 }

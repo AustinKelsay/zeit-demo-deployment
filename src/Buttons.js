@@ -32,9 +32,9 @@ const Buttons = (props) => {
     return(
       <div className="button-container">
         <div className='buttons'>
-        <button className="btn draw-border" onClick={() => cSelector(1)} active={cSelected ===1} ><p>About</p></button>
-        <button className="btn draw-border" onClick={() => cSelector(2)} active={cSelected ===2} ><p>Projects</p></button>
-        <button className="btn draw-border" onClick={() => cSelector(3)} active={cSelected === 3} ><p>Contact</p></button>
+        <button className="btn draw-border" onClick={() => cSelector(1)} active={cSelected ===1} ><p className={'btn-text'}>About</p></button>
+        <button className="btn draw-border" onClick={() => cSelector(2)} active={cSelected ===2} ><p className={'btn-text'}>Projects</p></button>
+        <button className="btn draw-border" onClick={() => cSelector(3)} active={cSelected === 3} ><p className={'btn-text'}>Contact</p></button>
         </div>
         {
           window.innerWidth > 945 ? <Component cSelected={cSelected} setCSelected={setCSelected} /> : null

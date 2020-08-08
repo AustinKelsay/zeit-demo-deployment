@@ -42,6 +42,8 @@
 @media (max-width: 945px){
   .slide-container{
     height: 40%;
+  }
+  .image-container{
     border-bottom: 2px solid black;
   }
 }
@@ -49,15 +51,6 @@
 @media (max-width: 630px){
   .slide-container{
     margin-top: 0%;
-  }
-}
-
-@media (max-width: 460px){
-  .buttons{
-    flex-direction: column;
-  }
-  .btn{
-    width: 45%;
   }
 }
 
