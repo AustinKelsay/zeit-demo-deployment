@@ -39,6 +39,20 @@
     height: 100%;
   }
 
+@media (max-width: 945px){
+  .slide-container{
+    height: 40%;
+    border-bottom: 2px solid black;
+  }
+}
+
+@media (max-width: 630px){
+  .slide-container{
+    margin-top: 0%;
+    height: auto;
+  }
+}
+
   /* Fade in animation */
   .image-container {
     opacity: 0.9;

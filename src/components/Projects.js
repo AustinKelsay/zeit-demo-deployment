@@ -14,7 +14,7 @@ const Projects = () => {
 
   const fade = useSpring({
     config: {
-      duration: 1300
+      duration: 4000
     },
     opacity: isToggled ? 1 : 0
   });

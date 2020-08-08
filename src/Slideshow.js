@@ -1,7 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import Buttons from './Buttons';
-import Component from "./components/component";
 
 import "./Slideshow.css";
 import img1 from "./Images/img1.jpg";

@@ -30,7 +30,7 @@ const About = () => {
             <CardImg className='about-photo' src="./Me.jpg" />
             <CardBody>
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
-                <CardSubtitle>Web Developer - Bitcoiner - Musician</CardSubtitle>
+                <CardSubtitle className='card-text'>Web Developer - Bitcoiner - Musician</CardSubtitle>
                 <CardText className='card-text'>I care about human rights, privacy, freedom, and the betterment of human well being.</CardText>
             </CardBody>
           </Card>

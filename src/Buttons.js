@@ -1,15 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from "react-dom"
+import Component from "./Component"
 
 
 import About from './components/About';
 import Projects from './components/Projects';
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import useFadeIn from "./components/useFadeIn";
+import Slideshow from "./Slideshow";
 import "./App.css"
 
-const Buttons = () => {
-  const [cSelected, setCSelected] = useState(0);
+const Buttons = (props) => {
+  const {cSelected, setCSelected} = props
+
+  const fadeIn = useFadeIn();
   
   const cSelector = (num) => {
     if (num === 1){
@@ -31,13 +36,9 @@ const Buttons = () => {
         <button className="btn draw-border" onClick={() => cSelector(2)} active={cSelected ===2} ><p>Projects</p></button>
         <button className="btn draw-border" onClick={() => cSelector(3)} active={cSelected === 3} ><p>Contact</p></button>
         </div>
-        <div>
-            <>
-            {cSelected ===1 ? <About  /> : null}
-            {cSelected ===2 ? <Projects  /> : null}
-            {cSelected ===3 ? <Contact  /> : null}
-            </>
-        </div>
+        {
+          window.innerWidth > 945 ? <Component cSelected={cSelected} setCSelected={setCSelected} /> : null
+        }
       </div>
     )
 }

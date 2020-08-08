@@ -4,6 +4,17 @@
     @include mui-fade(in, $duration: 10s);
   }
 
+  /* Component */
+
+.component-pre {
+    opacity: 0;
+  }
+  
+  .component {
+    opacity: 1;
+    transition: all ease-in 1s;
+  }
+
 
 /* ABOUT */
 
@@ -28,7 +39,7 @@
 }
 
 .card-img{
-    width: 36%;
+    width: 40%;
     border: 1px solid black;
     margin: 1% auto;
 }
@@ -108,4 +119,68 @@
     border: 1px solid salmon;
     border-radius: 8px;
     background-color: oldlace;
+}
+
+@media (max-width: 1640px){
+    .card-title{
+        margin-top: 1%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .card-text{
+        text-align: center;
+        margin: 3% auto;
+    }
+}
+
+@media (max-width: 1286px){
+    .card-img{
+        width: 50%;
+    }
+    .about-right{
+        padding-bottom: 3%;
+    }
+}
+
+@media (max-width: 1050px){
+    .card-img{
+        width: 60%;
+        margin-top: 3%;
+    }
+
+    .about-right{
+        padding-bottom: 3%;
+    }
+}
+
+@media (max-width: 945px){
+    .component{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .about{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    .about-card{
+        width: 60%;
+        margin: 2% auto;
+        border: none;
+    }
+    .about-right{
+        width: 100%;
+        margin: 1% auto;
+    }
+}
+
+@media (max-width: 935px){
+    .card-img{
+        width: 70%;
+    }
+
+    .about-right{
+        padding-bottom: 3%;
+    }
 }
