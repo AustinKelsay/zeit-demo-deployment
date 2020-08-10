@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Buttons from './Buttons';
 import Slideshow from "./Slideshow";
 import useFadeIn from "./components/useFadeIn";

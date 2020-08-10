@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import img from "./../Images/Ride-for-life.jpg";
 import { CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
-import {useSpring, animated, config} from "react-spring";
+import {useSpring, animated} from "react-spring";
 import "./components.css";
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
     useEffect(() => {
         setToggled(!isToggled);
         console.log(1);
-    },[])
+    }, [])
 
   const fade = useSpring({
     config: {
@@ -22,8 +22,8 @@ const Projects = () => {
     return (
         <animated.div style={fade} className="projects">
             <div className="project-box">
-                <a target="_blank" href="https://build-ride-for-life.netlify.com/">
-                  <img className="project-img" src={img} />
+                <a rel="noopener noreferrer" target="_blank" href="https://build-ride-for-life.netlify.com/">
+                  <img className="project-img" src={img} alt='project'/>
                 </a>
                 <CardBody className="project-card">
                   <CardTitle tag='h4'>Ride For Life</CardTitle>
@@ -35,8 +35,8 @@ const Projects = () => {
             </div>
 
             <div className="project-box">
-              <a target="_blank" href="https://build-ride-for-life.netlify.com/">
-                <img className="project-img" src={img} />
+              <a rel="noopener noreferrer" target="_blank" href="https://build-ride-for-life.netlify.com/">
+                <img className="project-img" src={img} alt='project' />
               </a>
               <CardBody className="project-card">
                 <CardTitle tag='h4'>Ride For Life</CardTitle>
@@ -48,8 +48,8 @@ const Projects = () => {
             </div>
 
             <div className="project-box">
-              <a target="_blank" href="https://build-ride-for-life.netlify.com/">
-                <img className="project-img" src={img} />
+              <a rel="noopener noreferrer" target="_blank" href="https://build-ride-for-life.netlify.com/">
+                <img className="project-img" src={img} alt='project'/>
               </a>
               <CardBody className="project-card">
                 <CardTitle tag='h4'>Ride For Life</CardTitle>

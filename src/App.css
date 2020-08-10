@@ -179,6 +179,8 @@ main {
   }
 
   .component-gradient{
+    border-top: 1px solid oldlace;
+    border-radius: 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

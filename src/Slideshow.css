@@ -54,6 +54,16 @@
   }
 }
 
+@media (max-width: 350px){
+  .slide-container{
+    width: 97%;
+    height: 35%;
+    margin: 3% auto;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+}
+
   /* Fade in animation */
   .image-container {
     opacity: 0.9;

@@ -155,9 +155,9 @@
 }
 
 @media (max-width: 945px){
-    .component{
-        padding-top: 10%;
-        padding-bottom: 5%;
+    .component-gradient{
+        padding-top: 7%;
+        padding-bottom: 7%;
     }
     .about{
         flex-direction: column;

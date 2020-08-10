@@ -1,6 +1,5 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
-import Buttons from './Buttons';
 
 import "./Slideshow.css";
 import img1 from "./Images/img1.jpg";
@@ -35,42 +34,42 @@ const Slideshow = () => {
       <Fade className="real-slide-container" {...fadeProperties}>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[0]} />
+            <img src={fadeImages[0]} alt='sky background' />
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[1]} />
+            <img src={fadeImages[1]} alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[2]} />
+            <img src={fadeImages[2]} alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[3]} />
+            <img src={fadeImages[3]} alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[4]} />
+            <img src={fadeImages[4]} alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[5]} />
+            <img src={fadeImages[5]} alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[6]} />
+            <img src={fadeImages[6]} alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[7]} />
+            <img src={fadeImages[7]} alt='sky background'/>
           </div>
         </div>
       </Fade>
