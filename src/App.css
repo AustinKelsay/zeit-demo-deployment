@@ -13,6 +13,8 @@ body {
 }
 
 main {
+  position: absolute;
+  z-index: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,7 +24,7 @@ main {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 200%;
   background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
   background-size: 300% 300%;
   animation-name: background;
@@ -195,7 +197,7 @@ main {
     
   @keyframes background {
       0% {
-        background-position: 0% 50%
+        background-position: 0% 50%n
       }
       50% {
         background-position: 100% 50%
@@ -242,6 +244,18 @@ main {
   }
   .header{
     padding-top: 3%;
+  }
+}
+
+@media (max-width: 415px){
+  .btn {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 375px){
+  .btn {
+    margin-top: 3%;
   }
 }
 
