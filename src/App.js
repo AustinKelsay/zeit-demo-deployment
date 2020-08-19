@@ -12,12 +12,14 @@ function App() {
   
   return (
       <main className={fadeIn === true ? "main" : "main-pre"}>
+        <div className={cSelected == 0 || null ? 'main-background' : 'main-background-inactive'}>
           <h1 className='header'>Austin Kelsay</h1>
           <Buttons cSelected={cSelected} setCSelected={setCSelected} />
           <Slideshow/>
           {
             window.innerWidth < 945 ? <Component cSelected={cSelected} setCSelected={setCSelected} /> : null
           }
+        </div>
       </main>
   );
 }

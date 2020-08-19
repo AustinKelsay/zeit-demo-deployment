@@ -10,7 +10,7 @@ const Component = (props) => {
     const fadeIn = useFadeIn();
     return(
         <div className={fadeIn === true ? "component" : "component-pre"}>
-            <div className='component-gradient'>
+            <div className={cSelected != 0 || null ? 'component-gradient' : ''}>
                 {cSelected ===1 ? <About fadeIn={fadeIn} /> : null}
                 {cSelected ===2 ? <Projects fadeIn={fadeIn} /> : null}
                 {cSelected ===3 ? <Contact fadeIn={fadeIn} /> : null}

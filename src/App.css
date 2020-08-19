@@ -1,6 +1,6 @@
 html {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   }
 
 body {
@@ -13,25 +13,35 @@ body {
 }
 
 main {
-  position: absolute;
-  z-index: 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   opacity: 1;
-  transition: all ease-in 2s;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 200%;
-  background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
-  background-size: 300% 300%;
-  animation-name: background;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
   }
+
+  .main-background{
+    width: 100%;
+    height: 100%;
+    transition: all ease-in 2s;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 200%;
+    background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
+    background-size: 100% 100%;
+    animation-name: background;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+
+  .main-background-inactive{
+    width: 100%;
+    height: 100%;
+    transition: all ease-in 2s;
+  }
+  
     
   @keyframes background {
       0% {
@@ -182,13 +192,12 @@ main {
 
   .component-gradient{
     border-top: 1px solid oldlace;
-    border-radius: 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
-    background-size: 300% 300%;
+    background-size: cover;
     animation-name: background;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -253,9 +262,15 @@ main {
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 390px){
   .btn {
-    margin-top: 3%;
+    margin-top: 1%;
+  }
+  .btn:first-child{
+    margin-top: 0%;
+  }
+  .header{
+    padding-top: 1%;
   }
 }
 

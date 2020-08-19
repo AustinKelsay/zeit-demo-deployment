@@ -184,3 +184,12 @@
         padding-bottom: 3%;
     }
 }
+
+@media (max-width: 415px){
+    .about-card {
+        width: 90%;
+    }
+    .about-right{
+        width: 100%;
+    }
+  }
