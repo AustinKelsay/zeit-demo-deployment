@@ -17,7 +17,7 @@ const fadeImages = [
  
 const fadeProperties = {
   duration: 7000,
-  transitionDuration: 4500,
+  transitionDuration: 18500,
   infinite: true,
   indicators: false,
   arrows: false,

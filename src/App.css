@@ -29,7 +29,7 @@ main {
     -o-background-size: cover;
     background-size: 200%;
     background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
-    background-size: 100% 100%;
+    background-size: 300% 300%;
     animation-name: background;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -69,8 +69,6 @@ main {
   font-weight: 7
   00;
   font-size: 2rem;
-  /* text-decoration: underline;
-  text-decoration-style: solid; */
   font-family: 'Roboto Mono', monospace;
   position: absolute;
   z-index: 1000;
@@ -195,9 +193,8 @@ main {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 300% 300%;
     background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
-    background-size: cover;
     animation-name: background;
     animation-duration: 15s;
     animation-iteration-count: infinite;
