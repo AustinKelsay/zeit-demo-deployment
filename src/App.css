@@ -27,7 +27,6 @@ main {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 200%;
     background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
     background-size: 300% 300%;
     animation-name: background;
