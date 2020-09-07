@@ -27,7 +27,7 @@ const About = () => {
     return(
         <animated.div style={fade} className='about'>
           <Card className='about-card'>
-            <CardImg className='about-photo' src="./Me.jpg" />
+            <CardImg className='about-photo' src="./Me-min.jpg" />
             <CardBody>
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
                 <CardSubtitle className='card-text'>Web Developer - Bitcoiner - Musician</CardSubtitle>
