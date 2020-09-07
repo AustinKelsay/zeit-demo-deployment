@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import img from "./../Images/Ride-for-life.jpg";
+import img from "./../Images/Ride-for-life-min.jpg";
 import { CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import {useSpring, animated} from "react-spring";
 import "./components.css";
