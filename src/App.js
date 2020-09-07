@@ -12,7 +12,7 @@ function App() {
   
   return (
       <main className={fadeIn === true ? "main" : "main-pre"}>
-        <div className={cSelected == 0 || null ? 'main-background' : 'main-background-inactive'}>
+        <div className={window.innerWidth < 945 && cSelected !== 0 ? 'main-background-inactive' : 'main-background'}>
           <h1 className='header'>Austin Kelsay</h1>
           <Buttons cSelected={cSelected} setCSelected={setCSelected} />
           <Slideshow/>
