@@ -30,7 +30,7 @@ main {
     background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
     background-size: 300% 300%;
     animation-name: background;
-    animation-duration: 15s;
+    animation-duration: 180s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
   }
@@ -195,7 +195,7 @@ main {
     background-size: 300% 300%;
     background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
     animation-name: background;
-    animation-duration: 15s;
+    animation-duration: 180s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
   }
