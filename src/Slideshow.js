@@ -34,42 +34,58 @@ const Slideshow = () => {
       <Fade className="real-slide-container" {...fadeProperties}>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[0]} alt='sky background' />
+            <img src={fadeImages[0]}
+                 srcset={"./Images/img1-min.jpg 1900w, "}
+            alt='sky background' />
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[1]} alt='sky background'/>
+            <img src={fadeImages[1]}
+
+            alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[2]} alt='sky background'/>
+            <img src={fadeImages[2]} 
+
+            alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[3]} alt='sky background'/>
+            <img src={fadeImages[3]} 
+
+            alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[4]} alt='sky background'/>
+            <img src={fadeImages[4]} 
+
+            alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[5]} alt='sky background'/>
+            <img src={fadeImages[5]} 
+
+            alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[6]} alt='sky background'/>
+            <img src={fadeImages[6]}
+
+            alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={fadeImages[7]} alt='sky background'/>
+            <img src={fadeImages[7]}
+
+            alt='sky background'/>
           </div>
         </div>
       </Fade>
