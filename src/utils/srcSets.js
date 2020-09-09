@@ -1,3 +1,4 @@
+import getSrcset from "@renditions/get-srcset"
 
     export const srcset1 = getSrcset([
         {
