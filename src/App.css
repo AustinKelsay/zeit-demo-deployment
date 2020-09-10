@@ -195,7 +195,7 @@ main {
     background-size: 300% 300%;
     background: linear-gradient(-30deg, #df590bcc, #c43232c5, #2aafe0c7, #473b88c5) no-repeat center center fixed;
     animation-name: background;
-    animation-duration: 180s;
+    animation-duration: 120s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
   }
