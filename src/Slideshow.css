@@ -34,6 +34,7 @@
   
   .each-fade .image-container {
     max-width: 100%;
+    margin: 0% auto;
     height: auto;
     overflow: hidden;
   }

@@ -46,56 +46,56 @@ const Slideshow = () => {
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[0]}
-                 srcset={{srcset1}}
+                 srcSet={{srcset1}}
             alt='sky background' />
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[1]}
-                srcset={{srcset2}}
+                srcSet={{srcset2}}
             alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[2]} 
-            srcset={{srcset3}}
+            srcSet={{srcset3}}
             alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[3]} 
-            srcset={{srcset4}}
+            srcSet={{srcset4}}
             alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[4]} 
-            srcset={{srcset5}}
+            srcSet={{srcset5}}
             alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[5]} 
-            srcset={{srcset6}}
+            srcSet={{srcset6}}
             alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[6]}
-            srcset={{srcset7}}
+            srcSet={{srcset7}}
             alt='sky background'/>
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[7]}
-            srcset={{srcset8}}
+            srcSet={{srcset8}}
             alt='sky background'/>
           </div>
         </div>
