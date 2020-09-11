@@ -23,8 +23,8 @@
     margin: 0 auto;
     border: 2px solid salmon;
     border-radius: 8px;
-    width: 70%;
-    height: 95%;
+    width: 65%;
+    height: auto;
     display:flex;
     margin-top: 2%;
     font-family: 'Roboto Mono', monospace;
@@ -161,6 +161,12 @@
     border: 1px solid salmon;
     border-radius: 8px;
     background-color: oldlace;
+}
+
+@media (max-height: 700px) {
+    .about {
+        margin-top: 1%;
+    }
 }
 
 @media (max-width: 1640px){
