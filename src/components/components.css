@@ -19,11 +19,11 @@
 /* ABOUT */
 
 .about {
-    background-color: rgb(136, 151, 167);
+    background-color: rgba(136, 151, 167, 0.4);
     margin: 0 auto;
     border: 2px solid salmon;
     border-radius: 8px;
-    width: 90%;
+    width: 70%;
     height: 95%;
     display:flex;
     margin-top: 2%;
@@ -100,16 +100,15 @@
 .projects {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    justify-content: space-evenly;
+    width: 70%;
     height: auto;
     border: 2px solid salmon;
-    background-color: rgb(136, 151, 167);
+    background-color: rgba(136, 151, 167, 0.4);
     margin: 0 auto;
     border-radius: 8px;
     font-family: 'Roboto Mono', monospace;
     margin-top: 2%;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .carousel-inner img {
@@ -121,6 +120,26 @@
 
 .carousel-inner p {
     color: black;
+    margin: 1% auto;
+}
+
+.carousel-inner h1 {
+    color: black;
+    margin: 1% auto;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% auto;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid oldlace;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
 }
 
 .project-box {
@@ -181,6 +200,10 @@
     .component-gradient{
         padding-top: 7%;
         padding-bottom: 7%;
+        height: 100%;
+    }
+    .component {
+        height: 100%;
     }
     .about{
         flex-direction: column;
@@ -198,10 +221,26 @@
     }
     .projects{
         flex-direction: column;
+        height: 100%;
+        width: 85%;
     }
-    .project-box {
-        width: auto;
-        height: auto;
+
+    .carousel-inner img {
+        width: 90%;
+    }
+    
+    .carousel-inner p {
+        color: black;
+    }
+    
+    .carousel-inner h1 {
+        color: black;
+    }
+    
+    .project-info {
+        padding: 5%;
+        margin-top: 5%;
+        margin-bottom: 40%;
     }
 }
 

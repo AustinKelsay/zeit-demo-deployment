@@ -1,10 +1,42 @@
-import React, {useState, useEffect} from 'react';
-import img from "../images/Ride-for-life.jpg";
-import { CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import React, { useState, useEffect } from 'react';
 import {useSpring, animated} from "react-spring";
-import "./components.css";
+import RFL from "../images/Ride-for-life.jpg"
+import "./components.css"
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption
+} from 'reactstrap';
 
-const Projects = () => {
+const items = [
+  {
+    src: `${RFL}`,
+    altText: 'Slide 1',
+    header: 'Ride for Life',
+    caption: 'Ride for life was my first build week at Lambda School as a front end dev. I did all of the styling and components on this app!',
+    link: 'https://build-ride-for-life.netlify.app/'
+  },
+  {
+    src: `${RFL}`,
+    altText: 'Slide 1',
+    header: 'Ride for Life',
+    caption: 'Ride for life was my first build week at Lambda School as a front end dev. I did all of the styling and components on this app!',
+    link: 'https://build-ride-for-life.netlify.app/'
+  },
+  {
+    src: `${RFL}`,
+    altText: 'Slide 1',
+    header: 'Ride for Life',
+    caption: 'Ride for life was my first build week at Lambda School as a front end dev. I did all of the styling and components on this app!',
+    link: 'https://build-ride-for-life.netlify.app/'
+  }
+];
+
+const Projects = (props) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
   const [isToggled, setToggled] = useState(false)
 
     useEffect(() => {
@@ -19,50 +51,55 @@ const Projects = () => {
     opacity: isToggled ? 1 : 0
   });
 
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  }
+
+  const slides = items.map((item) => {
     return (
-        <animated.div style={fade} className="projects">
-            <div className="project-box">
-                <a rel="noopener noreferrer" target="_blank" href="https://build-ride-for-life.netlify.com/">
-                  <img className="project-img" src={img} alt='project'/>
-                </a>
-                <CardBody className="project-card">
-                  <CardTitle tag='h4'>Ride For Life</CardTitle>
-                  <CardSubtitle>Role: front-end developer</CardSubtitle>
-                  <CardText className='card-text'> Ride For Life serves mothers in Uganda to improve maternal and child survival. 
-                    This is an app that connects riders and drivers 
-                  </CardText>
-                </CardBody>
-            </div>
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={item.src}
+      >
+        <a href={item.link} target="_blank">
+        <img src={item.src} alt={item.altText} />
+        </a>
+        <div className='project-info'>
+            <h1>{item.header}</h1>
+            <p>{item.caption}</p>
+        </div>
+      </CarouselItem>
+    );
+  });
 
-            <div className="project-box">
-              <a rel="noopener noreferrer" target="_blank" href="https://build-ride-for-life.netlify.com/">
-                <img className="project-img" src={img} alt='project' />
-              </a>
-              <CardBody className="project-card">
-                <CardTitle tag='h4'>Ride For Life</CardTitle>
-                <CardSubtitle>Role: front-end developer</CardSubtitle>
-                <CardText className='card-text'> Ride For Life serves mothers in Uganda to improve maternal and child survival. 
-                This is an app that connects riders and drivers 
-                </CardText>
-              </CardBody>
-            </div>
-
-            <div className="project-box">
-              <a rel="noopener noreferrer" target="_blank" href="https://build-ride-for-life.netlify.com/">
-                <img className="project-img" src={img} alt='project'/>
-              </a>
-              <CardBody className="project-card">
-                <CardTitle tag='h4'>Ride For Life</CardTitle>
-                <CardSubtitle>Role: front-end developer</CardSubtitle>
-                <CardText className='card-text'> Ride For Life serves mothers in Uganda to improve maternal and child survival. 
-                This app was built during Lambda School build week. 
-                I worked on a majority of the frontend and UI, Stephen Tanksley my teammate worked on backend and state managment.
-                </CardText>
-              </CardBody>
-            </div>
-        </animated.div>
-    )
-
+  return (
+    <animated.div style={fade} className="projects">
+        <Carousel
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}
+        >
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        </Carousel>
+    </animated.div>
+  );
 }
 
 export default Projects;
