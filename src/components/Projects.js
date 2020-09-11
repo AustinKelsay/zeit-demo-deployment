@@ -55,7 +55,8 @@ const Projects = () => {
                 <CardTitle tag='h4'>Ride For Life</CardTitle>
                 <CardSubtitle>Role: front-end developer</CardSubtitle>
                 <CardText className='card-text'> Ride For Life serves mothers in Uganda to improve maternal and child survival. 
-                This is an app that connects riders and drivers 
+                This app was built during Lambda School build week. 
+                I worked on a majority of the frontend and UI, Stephen Tanksley my teammate worked on backend and state managment.
                 </CardText>
               </CardBody>
             </div>

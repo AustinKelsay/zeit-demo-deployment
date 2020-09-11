@@ -31,7 +31,7 @@ const About = () => {
             <CardBody>
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
                 <CardSubtitle className='card-text'>Web Developer - Bitcoiner - Musician</CardSubtitle>
-                <CardText className='card-text'>I care about human rights, privacy, freedom, and the betterment of human well being.</CardText>
+                <CardText className='card-text'>I care about human rights, data dignity, privacy, freedom, and the betterment of human well being.</CardText>
             </CardBody>
           </Card>
 
@@ -45,14 +45,11 @@ const About = () => {
 
             <div className='mission'>
               <h4>My mission:</h4>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              <p>To be surrounded by and participating in software that has a meaningful impact on individuals
               </p>
               <h4>My history:</h4>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+              <p>Since discovering Bitcoin in late 2016 I have been working towards becoming a software develper who can contribute towards this ecosystem. 
+                I joined Lambda school in mid 2019 looking to accelarate my learning and break into the industry.
               </p>
             </div>
 
