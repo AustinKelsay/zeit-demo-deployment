@@ -201,6 +201,15 @@ main {
     }
 }
 
+@media (max-height: 700px) {
+  .buttons {
+      padding-top: 12%;
+  }
+  .header {
+    padding-top: 4%;
+  }
+}
+
 @media (max-width: 680px){
   .buttons{
     width: 100%;
