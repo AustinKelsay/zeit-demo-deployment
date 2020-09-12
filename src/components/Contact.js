@@ -1,18 +1,21 @@
 import React, {useEffect, useState} from 'react';
 import {
-  Button
+  Button, Popover, PopoverHeader, PopoverBody
 } from 'reactstrap';
 import {useSpring, animated} from "react-spring";
 import './components.css';
 
 const Contact = () => {
   const [isToggled, setToggled] = useState(false)
+  const [popoverOpen, setPopoverOpen] = useState(false);
   const [emailInfo, SetEmailInfo] = useState({
     feedback: '', 
     name: '', 
     replyTo: '',
     email: 'austinkelsay11@gmail.com'
 })
+
+const toggle = () => setPopoverOpen(!popoverOpen);
 
 const handleChange = (e) => {
   console.log(e.target.name)
@@ -82,9 +85,12 @@ const sendFeedback = (templateId, variables) => {
                     style={{width: '100%', height: '120px'}}
                 />
             </div>
-            <Button onClick={handleSubmit} variant="outlined" color="warning">
+            <Button id="Popover1" onClick={handleSubmit} variant="outlined" color="warning">
                 Send
             </Button>
+            <Popover placement="bottom" isOpen={popoverOpen} target="Popover1" toggle={toggle}>
+              <PopoverHeader>Email sent!</PopoverHeader>
+            </Popover>
   	    </form>
         </animated.div>
     )
