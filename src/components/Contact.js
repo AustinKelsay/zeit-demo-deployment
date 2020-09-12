@@ -1,14 +1,41 @@
 import React, {useEffect, useState} from 'react';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
-  } from 'reactstrap';
-import { SocialIcon } from 'react-social-icons';
+  Button
+} from 'reactstrap';
 import {useSpring, animated} from "react-spring";
 import './components.css';
 
 const Contact = () => {
-    const [isToggled, setToggled] = useState(false)
+  const [isToggled, setToggled] = useState(false)
+  const [emailInfo, SetEmailInfo] = useState({
+    feedback: '', 
+    name: '', 
+    replyTo: '',
+    email: 'austinkelsay11@gmail.com'
+})
+
+const handleChange = (e) => {
+  console.log(e.target.name)
+    SetEmailInfo({...emailInfo, [e.target.name]: e.target.value})
+    console.log(emailInfo)
+}
+
+const sendFeedback = (templateId, variables) => {
+    window.emailjs.send(
+        'austinkelsay11@gmail.com', templateId,
+        variables
+        ).then(res => {
+            console.log('Email successfully sent!')
+        })
+        // Handle errors here however you like, or use a React error boundary
+        .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+    }
+    
+    const handleSubmit = (e) => {
+        const templateId = 'template_h6G3qViL';
+        console.log(emailInfo.name)
+        sendFeedback(templateId, {message_html: emailInfo.feedback, from_name: emailInfo.name, reply_to: emailInfo.replyTo})
+      }
 
     useEffect(() => {
         setToggled(!isToggled);
@@ -24,31 +51,41 @@ const Contact = () => {
 
     return(
         <animated.div style={fade} className='about'>
-          <Card className='about-card'>
-            <CardImg className='about-photo' src="./Me.jpg" />
-            <CardBody>
-                <CardTitle tag='h4'>Austin Kelsay</CardTitle>
-                <CardSubtitle>Software Developer - Investor - Musician</CardSubtitle>
-                <CardText className='card-text'>I care about human consiousness and the betterment of human well being.</CardText>
-            </CardBody>
-          </Card>
-
-          <div className="about-right">
-
-            <div className='links'>
-            <SocialIcon className="icon" url="https://twitter.com/ASeries_ofTubes" />
-            <SocialIcon className="icon" url="https://www.linkedin.com/in/austin-kelsay-533943157/" />
-            <SocialIcon className="icon" url="https://github.com/AustinKelsay" />
+          <form className="test-mailing">
+            <h1>Lets get in touch</h1>
+            <div>
+                <textarea
+                    id="test-mailing"
+                    name="name"
+                    onChange={handleChange}
+                    placeholder="Enter your name here"
+                    required
+                    value={emailInfo.name}
+                    style={{width: '60%', height: 'auto'}}
+                />
+                <textarea
+                    id="test-mailing"
+                    name="replyTo"
+                    onChange={handleChange}
+                    placeholder="Enter your email here"
+                    required
+                    value={emailInfo.replyTo}
+                    style={{width: '60%', height: 'auto'}}
+                />
+                <textarea
+                    id="test-mailing"
+                    name="feedback"
+                    onChange={handleChange}
+                    placeholder="Message"
+                    required
+                    value={emailInfo.feedback}
+                    style={{width: '100%', height: '120px'}}
+                />
             </div>
-
-            <div className='mission'>
-              <h4>My mission:</h4>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-              <h4>My history:</h4>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-
-          </div>
+            <Button onClick={handleSubmit} variant="outlined" color="warning">
+                Send
+            </Button>
+  	    </form>
         </animated.div>
     )
 }

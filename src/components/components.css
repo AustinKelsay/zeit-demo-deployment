@@ -163,6 +163,22 @@
     background-color: oldlace;
 }
 
+/* Contact */
+
+.test-mailing {
+    margin: 3% auto;
+}
+
+.test-mailing textarea {
+    margin: 1% auto;
+    border: 1px solid salmon;
+    border-radius: 5px;
+}
+
+.test-mailing .btn {
+    margin-top: 3%;
+}
+
 @media (max-height: 700px) {
     .about {
         margin-top: 1%;

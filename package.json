@@ -6,6 +6,7 @@
     "@renditions/get-srcset": "github:renditions/get-srcset",
     "bootstrap": "^4.5.2",
     "css-loader": "^3.6.0",
+    "emailjs": "^3.3.0",
     "jquery": "^3.5.1",
     "less": "^3.12.2",
     "less-loader": "^5.0.0",
