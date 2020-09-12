@@ -169,6 +169,10 @@
     margin: 3% auto;
 }
 
+.test-mailing h1 {
+    font-size: 1.3rem;
+}
+
 .test-mailing textarea {
     margin: 1% auto;
     border: 1px solid salmon;
