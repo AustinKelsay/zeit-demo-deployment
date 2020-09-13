@@ -261,14 +261,14 @@ main {
 
 @media (max-width: 390px){
   .btn {
-    margin-top: 4%;
+    margin-top: 2%;
   }
   .btn p{
     font-size: 0.6rem;
     text-align: center;
   }
   .btn:first-child{
-    margin-top: 3%;
+    margin-top: 1%;
   }
   .header{
     padding-top: 1%;
