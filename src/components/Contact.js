@@ -53,7 +53,7 @@ const sendFeedback = (templateId, variables) => {
   });
 
     return(
-        <animated.div style={fade} className='about'>
+        <animated.div style={fade} className='contact'>
           <form className="test-mailing">
             <h1>Lets get in touch</h1>
             <div>

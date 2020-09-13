@@ -165,6 +165,20 @@
 
 /* Contact */
 
+.contact {
+    background-color: rgba(136, 151, 167, 0.4);
+    margin: 0 auto;
+    border: 2px solid salmon;
+    border-radius: 8px;
+    width: 65%;
+    height: auto;
+    display:flex;
+    margin-top: 2%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 .test-mailing {
     margin: 3% auto;
 }
@@ -182,6 +196,8 @@
 .test-mailing .btn {
     margin-top: 3%;
 }
+
+
 
 @media (max-height: 700px) {
     .about {
@@ -277,11 +293,20 @@
     }
 }
 
+@media (max-height: 900px) {
+    .component {
+        height: 60%;
+    }
+}
+
 @media (max-width: 415px){
     .about-card {
         width: 90%;
     }
     .about-right{
         width: 100%;
+    }
+    .component {
+        height: 65%;
     }
   }

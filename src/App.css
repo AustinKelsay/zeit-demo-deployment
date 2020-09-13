@@ -239,7 +239,7 @@ main {
 @media (max-width: 460px){
   .buttons{
     flex-direction: column;
-    margin-top: 2%;
+    margin-top: 0%;
   }
   .btn{
     width: 40%;
