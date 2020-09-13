@@ -108,7 +108,7 @@
     margin: 0 auto;
     border-radius: 8px;
     font-family: 'Roboto Mono', monospace;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .carousel-inner img {
@@ -293,9 +293,10 @@
     }
 }
 
-@media (max-height: 900px) {
-    .component {
-        height: 60%;
+@media (max-width: 615px) {
+    .contact {
+        margin-top: 12%;
+        margin-bottom: 12%;
     }
 }
 
@@ -305,5 +306,12 @@
     }
     .about-right{
         width: 100%;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .contact {
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
   }
