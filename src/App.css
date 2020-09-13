@@ -24,7 +24,7 @@ main {
 
   .main-background{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     transition: all ease-in 2s;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -252,6 +252,7 @@ main {
 @media (max-width: 415px){
   .btn {
     margin-top: 3%;
+    padding: 4.5%;
   }
   .header{
     padding-top: 2%;
@@ -288,7 +289,7 @@ main {
     margin: 1% auto;
   }
   .btn {
-    padding: 5%;
+    padding: 4%;
   }
 }
 
