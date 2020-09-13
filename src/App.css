@@ -245,13 +245,16 @@ main {
     width: 40%;
   }
   .header{
-    padding-top: 2%;
+    padding-top: 3%;
   }
 }
 
 @media (max-width: 415px){
   .btn {
     margin-top: 3%;
+  }
+  .header{
+    padding-top: 2%;
   }
 }
 
