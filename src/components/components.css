@@ -291,6 +291,10 @@
     .about-right{
         padding-bottom: 3%;
     }
+
+    .contact {
+        width: 87%;
+    }
 }
 
 @media (max-width: 615px) {
