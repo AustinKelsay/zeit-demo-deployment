@@ -259,6 +259,10 @@ main {
   .btn {
     margin-top: 1%;
   }
+  .btn p{
+    font-size: 0.6rem;
+    text-align: center;
+  }
   .btn:first-child{
     margin-top: 0%;
   }
@@ -268,28 +272,25 @@ main {
 }
 
 @media (max-width: 350px){
-  .btn .btn-text{
-    font-size: 0.7rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 335px){
-  .btn .btn-text{
-    font-size: 0.6rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 320px){
-  .btn .btn-text{
+  .btn .btn-text p{
     font-size: 0.5rem;
     text-align: center;
   }
 }
 
+@media (max-width: 320px) {
+  .header {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 1% auto;
+  }
+  .btn {
+    padding: 5%;
+  }
+}
+
 @media (max-width: 280px){
-  .btn .btn-text{
+  .btn p{
     padding: 0% auto;
     font-size: 0.4rem;
     text-align: center;
