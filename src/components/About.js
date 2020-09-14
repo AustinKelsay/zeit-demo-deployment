@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
+    CardTitle, CardSubtitle, CardLink
   } from 'reactstrap';
 import { SocialIcon } from 'react-social-icons';
 import {useSpring, animated} from "react-spring";
@@ -31,6 +31,7 @@ const About = () => {
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
                 <CardSubtitle className='card-text'>Web Developer - Bitcoiner - Musician</CardSubtitle>
                 <CardText className='card-text'>I care about human rights, data dignity, privacy, freedom, and the betterment of human well being.</CardText>
+                <CardText className='card-text'><a href='https://docs.google.com/document/d/1CG8hawpB0fJyisyF0p6QLf0oxDrMyNyh5mLlko7PFYI/edit?usp=sharing' target="_blank" >My resume</a></CardText>
             </CardBody>
           </Card>
 
