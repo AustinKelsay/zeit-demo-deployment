@@ -14,12 +14,11 @@ const About = () => {
 
   useEffect(() => {
     setToggled(!isToggled);
-    console.log(1);
   }, [])
 
   const fade = useSpring({
     config: {
-      duration: 4000
+      duration: 3000
     },
     opacity: isToggled ? 1 : 0
   });
@@ -45,11 +44,12 @@ const About = () => {
 
             <div className='mission'>
               <h4>My mission:</h4>
-              <p>To be surrounded by and participating in software that has a meaningful impact on individuals
-              </p>
+              <p>To participate in software that has a meaningful impact.</p>
+              <p>To be surounded by individuals and teams building impactful software.</p>
               <h4>My history:</h4>
-              <p>Since discovering Bitcoin in late 2016 I have been working towards becoming a software develper who can contribute towards this ecosystem. 
-                I joined Lambda school in mid 2019 looking to accelarate my learning and break into the industry.
+              <p>Since discovering Bitcoin in 2017 I have understood the meaningful impact that software can have for individuals. 
+                I began my journey as a developer with this ethos and have continued with the intention to work on a team building impactful software.
+                I joined Lambda School in mid 2019 to accelerate my learning and break into the industry.
               </p>
             </div>
 
