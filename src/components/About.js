@@ -37,9 +37,9 @@ const About = () => {
           <div className="about-right">
 
             <div className='links'>
-            <SocialIcon className="icon" url="https://twitter.com/ASeries_ofTubes" />
-            <SocialIcon className="icon" url="https://www.linkedin.com/in/austin-kelsay-533943157/" />
-            <SocialIcon className="icon" url="https://github.com/AustinKelsay" />
+            <SocialIcon className="icon" url="https://twitter.com/ASeries_ofTubes" target="_blank" />
+            <SocialIcon className="icon" url="https://www.linkedin.com/in/austin-kelsay-533943157/" target="_blank" />
+            <SocialIcon className="icon" url="https://github.com/AustinKelsay" target="_blank" />
             </div>
 
             <div className='mission'>
