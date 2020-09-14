@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import RFL from "../images/RideForLife.jpg"
 import anyFit from "../images/anyFit.jpg"
 import gameOfLife from "../images/gameOfLife.jpg"
+import fbExplorer from "../images/fbExplorer.jpg"
 import "./components.css"
 import {
   Carousel,
@@ -14,12 +15,20 @@ import {
 
 const items = [
   {
-    src: `${RFL}`,
-    altText: 'Ride for Life app image',
-    header: 'Ride for Life',
-    github: 'https://github.com/AustinKelsay/Front-End-1/tree/AustinKelsay',
-    caption: 'Ride for life was my first build week at Lambda School as a front end dev and the first full-stack app I ever worked on. I did all of the styling and components!',
-    link: 'https://build-ride-for-life.netlify.app/'
+    src: `${gameOfLife}`,
+    altText: "austin's game of life app image",
+    header: "Austin's game of life",
+    github: 'https://github.com/AustinKelsay/austins-game-of-life',
+    caption: 'Game of Life was my computer science build week project. I have always been fascinated by celular automata and conways game of life in paticular! This is a React single page application (still working on making it mobile responsive)',
+    link: 'https://austins-game-of-life.vercel.app/'
+  },
+  {
+    src: `${fbExplorer}`,
+    altText: "fb-explorer app image",
+    header: "Facebook Explorer",
+    github: 'https://github.com/AustinKelsay/fb-explorer',
+    caption: "fb-explorer is a web app that helps individuals reclaim their Facebook data. A user can log into Facebook, download their data, drop it in, and explore it in a sleek dashboard that doesn't collect any information. fb-explorer is still under construction as I am working towards MVP.",
+    link: 'https://austins-game-of-life.vercel.app/'
   },
   {
     src: `${anyFit}`,
@@ -30,13 +39,13 @@ const items = [
     link: 'https://musing-knuth-63bdac.netlify.app/register'
   },
   {
-    src: `${gameOfLife}`,
-    altText: "austin's game of life app image",
-    header: "Austin's game of life",
-    github: 'https://github.com/AustinKelsay/austins-game-of-life',
-    caption: 'Game of Life was my computer science build week project. I have always been fascinated by celular automata and conways game of life in paticular! This is a React single page application (still working on making it mobile responsive)',
-    link: 'https://austins-game-of-life.vercel.app/'
-  }
+    src: `${RFL}`,
+    altText: 'Ride for Life app image',
+    header: 'Ride for Life',
+    github: 'https://github.com/AustinKelsay/Front-End-1/tree/AustinKelsay',
+    caption: 'Ride for life was my first build week at Lambda School as a front end dev and the first full-stack app I ever worked on. I did all of the styling and components!',
+    link: 'https://build-ride-for-life.netlify.app/'
+  },
 ];
 
 const Projects = (props) => {
