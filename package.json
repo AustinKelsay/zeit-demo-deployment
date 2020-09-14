@@ -24,7 +24,8 @@
     "react-use": "^15.3.4",
     "reactstrap": "^8.5.1",
     "style-loader": "^1.2.1",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "uuid": "^8.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

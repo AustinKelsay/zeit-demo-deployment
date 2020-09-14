@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {
-  Button, Popover, PopoverHeader, PopoverBody
+  Button, Popover, PopoverHeader
 } from 'reactstrap';
 import {useSpring, animated} from "react-spring";
 import './components.css';
@@ -42,12 +42,11 @@ const sendFeedback = (templateId, variables) => {
 
     useEffect(() => {
         setToggled(!isToggled);
-        console.log(1);
     },[])
 
   const fade = useSpring({
     config: {
-      duration: 4000
+      duration: 3000
     },
     opacity: isToggled ? 1 : 0
   });

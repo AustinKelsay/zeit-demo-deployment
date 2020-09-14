@@ -6,10 +6,9 @@ const useFadeIn = () => {
     useEffect(() => {
       function setter() {
         setFadeIn(true);
-        console.log("hi")
       }
   
-      setTimeout(setter, 2000)
+      setTimeout(setter, 1800)
     },[])
 
     return fadeIn;

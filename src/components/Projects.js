@@ -1,36 +1,41 @@
 import React, { useState, useEffect } from 'react';
 import {useSpring, animated} from "react-spring";
-import RFL from "../images/Ride-for-life.jpg"
+import { v4 as uuidv4 } from 'uuid';
+import RFL from "../images/RideForLife.jpg"
+import anyFit from "../images/anyFit.jpg"
+import gameOfLife from "../images/gameOfLife.jpg"
 import "./components.css"
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
 } from 'reactstrap';
 
 const items = [
   {
     src: `${RFL}`,
-    altText: 'Slide 1',
+    altText: 'Ride for Life app image',
     header: 'Ride for Life',
-    caption: 'Ride for life was my first build week at Lambda School as a front end dev. I did all of the styling and components on this app!',
+    github: 'https://github.com/AustinKelsay/Front-End-1/tree/AustinKelsay',
+    caption: 'Ride for life was my first build week at Lambda School as a front end dev and the first full-stack app I ever worked on. I did all of the styling and components!',
     link: 'https://build-ride-for-life.netlify.app/'
   },
   {
-    src: `${RFL}`,
-    altText: 'Slide 1',
-    header: 'Ride for Life',
-    caption: 'Ride for life was my first build week at Lambda School as a front end dev. I did all of the styling and components on this app!',
-    link: 'https://build-ride-for-life.netlify.app/'
+    src: `${anyFit}`,
+    altText: 'Anywhere Fitness app image',
+    header: 'Anywhere Fitness',
+    github: 'https://github.com/AustinKelsay/back-end',
+    caption: 'Anywhere Fitness was my backend buildweek project (frontend is a little buggy). I built the entire backend with Node/Express, a Postgres database, and a tests on all of the endpoints with supertest and a local SQL3 test db!',
+    link: 'https://musing-knuth-63bdac.netlify.app/register'
   },
   {
-    src: `${RFL}`,
-    altText: 'Slide 1',
-    header: 'Ride for Life',
-    caption: 'Ride for life was my first build week at Lambda School as a front end dev. I did all of the styling and components on this app!',
-    link: 'https://build-ride-for-life.netlify.app/'
+    src: `${gameOfLife}`,
+    altText: "austin's game of life app image",
+    header: "Austin's game of life",
+    github: 'https://github.com/AustinKelsay/austins-game-of-life',
+    caption: 'Game of Life was my computer science build week project. I have always been fascinated by celular automata and conways game of life in paticular! This is a React single page application (still working on making it mobile responsive)',
+    link: 'https://austins-game-of-life.vercel.app/'
   }
 ];
 
@@ -41,12 +46,11 @@ const Projects = (props) => {
 
     useEffect(() => {
         setToggled(!isToggled);
-        console.log(1);
     }, [])
 
   const fade = useSpring({
     config: {
-      duration: 4000
+      duration: 3000
     },
     opacity: isToggled ? 1 : 0
   });
@@ -81,6 +85,7 @@ const Projects = (props) => {
         <div className='project-info'>
             <h1>{item.header}</h1>
             <p>{item.caption}</p>
+            <a href={item.github}>github</a>
         </div>
       </CarouselItem>
     );
@@ -89,6 +94,7 @@ const Projects = (props) => {
   return (
     <animated.div style={fade} className="projects">
         <Carousel
+        key={uuidv4}
         activeIndex={activeIndex}
         next={next}
         previous={previous}

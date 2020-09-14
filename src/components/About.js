@@ -14,12 +14,11 @@ const About = () => {
 
   useEffect(() => {
     setToggled(!isToggled);
-    console.log(1);
   }, [])
 
   const fade = useSpring({
     config: {
-      duration: 4000
+      duration: 3000
     },
     opacity: isToggled ? 1 : 0
   });
