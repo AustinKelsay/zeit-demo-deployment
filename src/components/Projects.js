@@ -28,7 +28,7 @@ const items = [
     header: "Facebook Explorer",
     github: 'https://github.com/AustinKelsay/fb-explorer',
     caption: "fb-explorer is a web app that helps individuals reclaim their Facebook data. A user can log into Facebook, download their data, drop it in, and explore it in a sleek dashboard that doesn't collect any information. fb-explorer is still under construction as I am working towards MVP.",
-    link: 'https://austins-game-of-life.vercel.app/'
+    link: 'https://fb-explorer.vercel.app/'
   },
   {
     src: `${anyFit}`,
