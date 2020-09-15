@@ -5,6 +5,7 @@ import RFL from "../images/RideForLife.jpg"
 import anyFit from "../images/anyFit.jpg"
 import gameOfLife from "../images/gameOfLife.jpg"
 import fbExplorer from "../images/fbExplorer.jpg"
+import lawnGnome from "../images/lawnGnome.jpg"
 import "./components.css"
 import {
   Carousel,
@@ -14,6 +15,14 @@ import {
 } from 'reactstrap';
 
 const items = [
+  {
+    src: `${lawnGnome}`,
+    altText: 'the lawn gnome app image',
+    header: 'The Lawn Gnome',
+    github: 'https://github.com/AustinKelsay/Lawn-gnomes',
+    caption: 'The Lawn Gnome was my first freelance web app for a small local business! The Lawn Gnome was built with React and styled with material-ui/core and I implemented emailjs for customers to contact the owner directly',
+    link: 'https://lawn-gnomes.vercel.app/'
+  },
   {
     src: `${gameOfLife}`,
     altText: "austin's game of life app image",
@@ -88,13 +97,13 @@ const Projects = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <a href={item.link} target="_blank">
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
         <img src={item.src} alt={item.altText} />
         </a>
         <div className='project-info'>
             <h1>{item.header}</h1>
             <p>{item.caption}</p>
-            <a href={item.github}>github</a>
+            <a href={item.github} target="_blank" rel="noopener noreferrer">github</a>
         </div>
       </CarouselItem>
     );
