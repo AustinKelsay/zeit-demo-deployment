@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, CardLink
+    CardTitle, CardSubtitle,
   } from 'reactstrap';
 import { SocialIcon } from 'react-social-icons';
 import {useSpring, animated} from "react-spring";
@@ -31,16 +31,16 @@ const About = () => {
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
                 <CardSubtitle className='card-text'>Web Developer - Bitcoiner - Musician</CardSubtitle>
                 <CardText className='card-text'>I care about human rights, data dignity, privacy, freedom, and the betterment of human well being.</CardText>
-                <CardText className='card-text'><a href='https://docs.google.com/document/d/1CG8hawpB0fJyisyF0p6QLf0oxDrMyNyh5mLlko7PFYI/edit?usp=sharing' target="_blank" >My resume</a></CardText>
+                <CardText className='card-text'><a href='https://docs.google.com/document/d/1CG8hawpB0fJyisyF0p6QLf0oxDrMyNyh5mLlko7PFYI/edit?usp=sharing' target="_blank" rel="noopener noreferrer">My resume</a></CardText>
             </CardBody>
           </Card>
 
           <div className="about-right">
 
             <div className='links'>
-            <SocialIcon className="icon" url="https://twitter.com/ASeries_ofTubes" target="_blank" />
-            <SocialIcon className="icon" url="https://www.linkedin.com/in/austin-kelsay-533943157/" target="_blank" />
-            <SocialIcon className="icon" url="https://github.com/AustinKelsay" target="_blank" />
+            <SocialIcon className="icon" url="https://twitter.com/ASeries_ofTubes" target="_blank" rel="noopener noreferrer"/>
+            <SocialIcon className="icon" url="https://www.linkedin.com/in/austin-kelsay-533943157/" target="_blank" rel="noopener noreferrer"/>
+            <SocialIcon className="icon" url="https://github.com/AustinKelsay" target="_blank" rel="noopener noreferrer"/>
             </div>
 
             <div className='mission'>
