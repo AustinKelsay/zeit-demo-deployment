@@ -28,7 +28,7 @@ const items = [
     altText: "austin's game of life app image",
     header: "Austin's game of life",
     github: 'https://github.com/AustinKelsay/austins-game-of-life',
-    caption: 'Game of Life was my computer science build week project. I have always been fascinated by celular automata and conways game of life in paticular! This is a React single page application (still working on making it mobile responsive)',
+    caption: 'An implementation of Conway’s Game of Life. I have always been fascinated by celular automata and conways game of life in paticular! This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter!',
     link: 'https://austins-game-of-life.vercel.app/'
   },
   {

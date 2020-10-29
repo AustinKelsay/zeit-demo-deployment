@@ -323,3 +323,9 @@
         margin-bottom: 15%;
     }
   }
+
+@media (max-height: 755px){
+    .about{
+        margin-top: 1%;
+    }
+}
