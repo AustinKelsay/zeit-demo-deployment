@@ -328,4 +328,7 @@
     .about{
         margin-top: 1%;
     }
+    .card-body{
+        padding: 0.5%;
+    }
 }

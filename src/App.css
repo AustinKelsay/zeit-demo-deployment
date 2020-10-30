@@ -201,13 +201,28 @@ main {
     }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 755px){
+  .buttons{
+    padding-bottom: 0.5%;
+  }
+}
+
+@media (max-height: 735px) {
   .buttons {
       padding-top: 12%;
   }
   .header {
     padding-top: 4%;
   }
+}
+
+@media (max-height: 700px){
+  .buttons {
+    padding-top: 8%;
+}
+.header {
+  padding-top: 2%;
+}
 }
 
 @media (max-width: 680px){
