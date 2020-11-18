@@ -45,8 +45,8 @@ const About = () => {
 
             <div className='mission'>
               <h4>My mission:</h4>
-              <p>To participate in software that has a meaningful impact.</p>
-              <p>To be surounded by individuals and teams building impactful software.</p>
+              <p>To participate in software that is meaningful for individuals.</p>
+              <p>To be surounded by colleagues and teams building impactful software.</p>
               <h4>My history:</h4>
               <p>Since discovering Bitcoin in 2017 I have understood the meaningful impact that software can have for individuals. 
                 I began my journey as a developer with this ethos and have continued with the intention to work on a team building impactful software.
