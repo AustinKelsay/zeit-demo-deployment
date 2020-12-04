@@ -146,6 +146,14 @@
     border-radius: 10px;
 }
 
+.project-info a {
+    font-size: 1.1rem;
+}
+
+.project-info h1 {
+    font-size: 1.3rem;
+}
+
 .project-box {
     width: 20%;
     height: 20%;
@@ -327,8 +335,5 @@
 @media (max-height: 755px){
     .about{
         margin-top: 1%;
-    }
-    .card-body{
-        padding: 0.5%;
     }
 }

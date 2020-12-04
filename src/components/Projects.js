@@ -28,7 +28,7 @@ const items = [
     altText: "austin's game of life app image",
     header: "Austin's game of life",
     github: 'https://github.com/AustinKelsay/austins-game-of-life',
-    caption: 'An implementation of Conway’s Game of Life. I have always been fascinated by celular automata and conways game of life in paticular! This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter!',
+    caption: 'An implementation of Conway’s Game of Life. This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter! I have always been fascinated by celular automata and conways game of life in paticular!',
     link: 'https://austins-game-of-life.vercel.app/'
   },
   {
@@ -36,7 +36,7 @@ const items = [
     altText: "fb-explorer app image",
     header: "Facebook Explorer",
     github: 'https://github.com/AustinKelsay/fb-explorer',
-    caption: "fb-explorer is a web app that helps individuals reclaim their Facebook data. A user can log into Facebook, download their data, drop it in, and explore it in a sleek dashboard that doesn't collect any information. fb-explorer is still under construction as I am working towards MVP.",
+    caption: "fb-explorer is a web app that helps individuals reclaim their Facebook data. A user can log into Facebook, download their data, drop it in, and explore it in a sleek dashboard that doesn't collect any information. fb-explorer is still under construction but close it is currenty working and quite close to MVP!",
     link: 'https://fb-explorer.vercel.app/'
   },
   {
@@ -102,8 +102,8 @@ const Projects = (props) => {
         </a>
         <div className='project-info'>
             <h1>{item.header}</h1>
+            <a href={item.github} target="_blank" rel="noopener noreferrer">github link</a>
             <p>{item.caption}</p>
-            <a href={item.github} target="_blank" rel="noopener noreferrer">github</a>
         </div>
       </CarouselItem>
     );
