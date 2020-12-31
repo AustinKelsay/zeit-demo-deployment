@@ -122,6 +122,13 @@
     width: 30%;
 }
 
+.carousel-inner img:hover {
+    background-color: #fff;
+    box-shadow:
+        0 0 5px 3px #fff,  /* inner white */
+        0 0 10px 5px #5E54EA; /* outer cyan */
+}
+
 .carousel-inner p {
     color: black;
     margin: 1% auto;
@@ -148,6 +155,7 @@
 
 .project-info a {
     font-size: 1.1rem;
+    text-decoration: underline;
 }
 
 .project-info h1 {
