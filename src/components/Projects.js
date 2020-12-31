@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import RFL from "../images/RideForLife.jpg"
 import anyFit from "../images/anyFit.jpg"
 import gameOfLife from "../images/gameOfLife.jpg"
-import fbExplorer from "../images/fbExplorer.jpg"
+import fbExplorer from "../images/fbexplorer.jpg"
 import lawnGnome from "../images/lawnGnome.jpg"
 import "./components.css"
 import {
@@ -15,6 +15,14 @@ import {
 } from 'reactstrap';
 
 const items = [
+  {
+    src: `${fbExplorer}`,
+    altText: "fb-explorer app image",
+    header: "fbexplorer",
+    github: 'https://github.com/AustinKelsay/fb-explorer',
+    caption: "fbexplorer is a tool that lets you reclaim, search, and explore all of your Facebook data. This is a single page application built with React and utilizing Redux/hooks for state management. fbexplorer does not collect any user's Facebook data or personal information.",
+    link: 'https://fbexplorer.app/'
+  },
   {
     src: `${lawnGnome}`,
     altText: 'the lawn gnome app image',
@@ -30,14 +38,6 @@ const items = [
     github: 'https://github.com/AustinKelsay/austins-game-of-life',
     caption: 'An implementation of Conway’s Game of Life. This is a React single page application with a random cell placement feature, speed settings for the simulation, and the ability to step through each generation with a visual counter! I have always been fascinated by celular automata and conways game of life in paticular!',
     link: 'https://austins-game-of-life.vercel.app/'
-  },
-  {
-    src: `${fbExplorer}`,
-    altText: "fb-explorer app image",
-    header: "Facebook Explorer",
-    github: 'https://github.com/AustinKelsay/fb-explorer',
-    caption: "fb-explorer is a web app that helps individuals reclaim their Facebook data. A user can log into Facebook, download their data, drop it in, and explore it in a sleek dashboard that doesn't collect any information. fb-explorer is still under construction but close it is currenty working and quite close to MVP!",
-    link: 'https://fb-explorer.vercel.app/'
   },
   {
     src: `${anyFit}`,
