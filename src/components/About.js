@@ -31,7 +31,7 @@ const About = () => {
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
                 <CardSubtitle className='card-text'>Web Developer - Bitcoiner - Musician</CardSubtitle>
                 <CardText className='card-text'>I care about human rights, data dignity, privacy, freedom, and the betterment of human well being.</CardText>
-                <CardText className='card-text'><a href='https://docs.google.com/document/d/1ak2MCwn-ppA3UJl799LdBRIb5yI_rpphnvB0Y8ZodI0/edit?usp=sharing' target="_blank" rel="noopener noreferrer">My resume</a></CardText>
+                <CardText className='card-text'><a href='https://docs.google.com/document/d/1vXBX3yG6-CpFqVyRNr2EX-NF2drkhu2UIUT-8qwA85Y/edit?usp=sharing' target="_blank" rel="noopener noreferrer">My resume</a></CardText>
             </CardBody>
           </Card>
 
