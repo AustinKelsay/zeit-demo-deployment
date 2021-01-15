@@ -20,7 +20,6 @@ const toggle = () => setPopoverOpen(!popoverOpen);
 const handleChange = (e) => {
   console.log(e.target.name)
     SetEmailInfo({...emailInfo, [e.target.name]: e.target.value})
-    console.log(emailInfo)
 }
 
 const sendFeedback = (templateId, variables) => {
@@ -36,7 +35,6 @@ const sendFeedback = (templateId, variables) => {
     
     const handleSubmit = (e) => {
         const templateId = 'template_h6G3qViL';
-        console.log(emailInfo.name)
         sendFeedback(templateId, {message_html: emailInfo.feedback, from_name: emailInfo.name, reply_to: emailInfo.replyTo})
       }
 
