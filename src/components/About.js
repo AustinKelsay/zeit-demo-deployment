@@ -48,9 +48,10 @@ const About = () => {
               <p>To participate in software that is meaningful for individuals.</p>
               <p>To be surounded by colleagues and teams building impactful software.</p>
               <h4>My history:</h4>
-              <p>Since discovering Bitcoin in 2017 I have understood the meaningful impact that software can have for individuals. 
-                I began my journey as a developer with this ethos and have continued with the intention to work on a team building impactful software.
-                I joined Lambda School in mid 2019 to accelerate my learning and break into the industry.
+              <p>
+                Since discovering Bitcoin and open source software I have understood the meaningful impact
+                that software has on individuals. I began my journey as a self taught developer with this
+                ethos and have continued with the intention to work on a team building impactful software.
               </p>
             </div>
 
