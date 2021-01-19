@@ -214,6 +214,9 @@ main {
   .header {
     padding-top: 4%;
   }
+  .button-container{
+    margin-top: 5%;
+  }
 }
 
 @media (max-height: 700px){
