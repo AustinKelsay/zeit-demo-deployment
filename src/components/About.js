@@ -7,8 +7,6 @@ import { SocialIcon } from 'react-social-icons';
 import {useSpring, animated} from "react-spring";
 import './components.css';
 
-//Add some boxshaddow to make these cards look better !!
-
 const About = () => {
   const [isToggled, setToggled] = useState(false)
 
@@ -30,8 +28,8 @@ const About = () => {
             <CardBody>
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
                 <CardSubtitle className='card-text'>Web Developer - Bitcoiner - Musician</CardSubtitle>
-                <CardText className='card-text'>I care about human rights, data dignity, privacy, freedom, and the betterment of human well being.</CardText>
-                <CardText className='card-text'><a href='https://docs.google.com/document/d/1vXBX3yG6-CpFqVyRNr2EX-NF2drkhu2UIUT-8qwA85Y/edit?usp=sharing' target="_blank" rel="noopener noreferrer">My resume</a></CardText>
+                <CardText className='card-text'>I'm a developer who is product obsessed and focused on creating tools that solve real problems and treat users with dignity</CardText>
+                <CardText className='card-text'><a href='https://docs.google.com/document/d/11V57vHvKV5go65lam9xfC2zCrDMw_LrpDAn7J0bcLIs/edit?usp=sharing' target="_blank" rel="noopener noreferrer">My resume</a></CardText>
             </CardBody>
           </Card>
 
@@ -49,9 +47,9 @@ const About = () => {
               <p>To be surounded by individuals and teams building impactful software.</p>
               <h4>My history:</h4>
               <p>
-                Since discovering Bitcoin and open source software I have understood the meaningful impact
-                that software has on individuals. I began my journey as a self taught developer with this
-                ethos and have continued with the intention to work on a team building impactful software.
+              I began my journey as a self taught developer with a passion for open-source projects. 
+              However, I learn faster in a team environment, so I got serious 2 years ago & enrolled in Lambda School. 
+              Now I am ready to work alongside a team of talented engineers to build something great together.
               </p>
             </div>
 

@@ -20,6 +20,7 @@
 
 .about {
     background-color: rgba(136, 151, 167, 0.4);
+    box-shadow: 5px 5px 5px black;
     margin: 0 auto;
     border: 2px solid salmon;
     border-radius: 8px;
@@ -109,6 +110,7 @@
     height: auto;
     border: 2px solid salmon;
     background-color: rgba(136, 151, 167, 0.4);
+    box-shadow: 5px 5px 5px black;
     margin: 0 auto;
     border-radius: 8px;
     font-family: 'Roboto Mono', monospace;
@@ -187,6 +189,7 @@
 
 .contact {
     background-color: rgba(136, 151, 167, 0.4);
+    box-shadow: 5px 5px 5px black;
     margin: 0 auto;
     border: 2px solid salmon;
     border-radius: 8px;
