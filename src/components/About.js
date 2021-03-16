@@ -28,7 +28,7 @@ const About = () => {
             <CardBody>
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
                 <CardSubtitle className='card-text'>Web Developer - Musician - Bitcoiner</CardSubtitle>
-                <CardText className='card-text'>Web Developer with a passion for Bitcoin, open source, and data ownership.</CardText>
+                <CardText className='card-text'>Developer with a passion for Bitcoin, open source, and data ownership.</CardText>
                 <CardText className='card-text'><a href='https://docs.google.com/document/d/11V57vHvKV5go65lam9xfC2zCrDMw_LrpDAn7J0bcLIs/edit?usp=sharing' target="_blank" rel="noopener noreferrer">My resume</a></CardText>
             </CardBody>
           </Card>
