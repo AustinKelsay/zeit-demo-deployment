@@ -6,6 +6,7 @@ import anyFit from "../images/anyFit.jpg"
 import gameOfLife from "../images/gameOfLife.jpg"
 import fbExplorer from "../images/fbexplorer.jpg"
 import lawnGnome from "../images/lawnGnome.jpg"
+import Reclaim from "../images/reclaimpic.jpg"
 import "./components.css"
 import {
   Carousel,
@@ -22,6 +23,14 @@ const items = [
     github: 'https://github.com/AustinKelsay/fb-explorer',
     caption: "fbexplorer is a tool that lets you reclaim, search, and explore all of your Facebook data. This is a single page application built with React and utilizing Redux/hooks for state management. fbexplorer does not collect any user's Facebook data or personal information.",
     link: 'https://fbexplorer.app/'
+  },
+  {
+    src: `${Reclaim}`,
+    altText: "Reclaim app image",
+    header: "Reclaim",
+    github: 'https://github.com/ReclaimApp/Reclaim',
+    caption: "(Still in development) Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
+    link: "https://reclaim.social"
   },
   {
     src: `${lawnGnome}`,
