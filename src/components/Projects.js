@@ -6,7 +6,7 @@ import anyFit from "../images/anyFit.jpg"
 import gameOfLife from "../images/gameOfLife.jpg"
 import fbExplorer from "../images/fbexplorer.jpg"
 import lawnGnome from "../images/lawnGnome.jpg"
-import Reclaim from "../images/reclaimpic.jpg"
+import Reclaim from "../images/reclaimWide.png"
 import "./components.css"
 import {
   Carousel,
