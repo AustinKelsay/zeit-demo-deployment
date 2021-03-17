@@ -201,6 +201,12 @@ main {
     }
 }
 
+@media (max-height: 650px) {
+  .button-container {
+      padding: 0%;
+  }
+}
+
 @media (max-height: 755px){
   .buttons{
     padding-bottom: 0.5%;

@@ -234,7 +234,11 @@
     margin-top: 3%;
 }
 
-
+@media (max-height: 650px) {
+    .projects {
+        margin-top: 2%;
+    }
+  }
 
 @media (max-height: 700px) {
     .about {
