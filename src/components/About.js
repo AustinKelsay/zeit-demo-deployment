@@ -37,7 +37,7 @@ const About = () => {
 
             <div className='links'>
             <SocialIcon className="icon" url="https://twitter.com/ASeries_ofTubes" target="_blank" rel="noopener noreferrer"/>
-            <SocialIcon className="icon" url="https://www.linkedin.com/in/austin-kelsay-615SATS/" target="_blank" rel="noopener noreferrer"/>
+            <SocialIcon className="icon" url="https://www.linkedin.com/in/austinkelsay/" target="_blank" rel="noopener noreferrer"/>
             <SocialIcon className="icon" url="https://github.com/AustinKelsay" target="_blank" rel="noopener noreferrer"/>
             </div>
 
