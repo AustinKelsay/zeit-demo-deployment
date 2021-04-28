@@ -234,6 +234,10 @@
     margin-top: 3%;
 }
 
+#Popover1 {
+    border: 1px solid oldlace;
+}
+
 @media (max-height: 650px) {
     .projects {
         margin-top: 0.5%;

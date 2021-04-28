@@ -82,7 +82,7 @@ const sendFeedback = (templateId, variables) => {
                     style={{width: '100%', height: '120px'}}
                 />
             </div>
-            <Button id="Popover1" onClick={handleSubmit} variant="outlined" color="warning">
+            <Button id="Popover1" onClick={handleSubmit} outline color="warning">
                 Send
             </Button>
             <Popover placement="bottom" isOpen={popoverOpen} target="Popover1" toggle={toggle}>
