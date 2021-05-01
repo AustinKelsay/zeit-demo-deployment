@@ -112,7 +112,7 @@ const Projects = (props) => {
         <div className='project-info'>
             <h1>{item.header}</h1>
             <div className="project-links">
-              <a href={item.github} target="_blank" rel="noopener noreferrer">github link</a>
+              <a href={item.github} target="_blank" rel="noopener noreferrer">github</a>
               <a href={item.link} target="_blank" rel="noopener noreferrer">deployment</a>
             </div>
             <p>{item.caption}</p>
