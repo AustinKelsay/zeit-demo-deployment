@@ -60,7 +60,8 @@
 }
 
 .card-text:last-child {
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 0;
 }
 
 .about-right{
