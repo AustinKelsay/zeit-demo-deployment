@@ -213,9 +213,9 @@ main {
   }
 }
 
-@media (max-height: 735px) {
+@media (max-height: 770px) {
   .buttons {
-      padding-top: 6%;
+      padding-top: 4%;
   }
   .header {
     padding-top: 4%;
