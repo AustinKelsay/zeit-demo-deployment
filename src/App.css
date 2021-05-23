@@ -225,15 +225,6 @@ main {
   }
 }
 
-@media (max-height: 700px){
-  .buttons {
-    padding-top: 8%;
-}
-.header {
-  padding-top: 2%;
-}
-}
-
 @media (max-width: 680px){
   .buttons{
     width: 100%;
