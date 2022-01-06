@@ -7,6 +7,7 @@ import gameOfLife from "../images/gameOfLife.jpg"
 import fbExplorer from "../images/fbexplorer.jpg"
 import lawnGnome from "../images/lawnGnome.jpg"
 import Reclaim from "../images/reclaimWide.png"
+import KnowledgeBot from "../images/bitcoinKnowledgeBot.png"
 import "./components.css"
 import {
   Carousel,
@@ -16,6 +17,14 @@ import {
 } from 'reactstrap';
 
 const items = [
+  {
+    src: `${KnowledgeBot}`,
+    altText: 'Bitcoin Knowledge Bot',
+    header: "Bitcoin Knowledge Bot",
+    github: "https://github.com/bitcoin-knowledge/bitcoin-knowledge-bot",
+    caption: "A question & answer AI bot that also suggests articles/podcasts. Powered by GPT-3 and trained on an open source dataset of established Bitcoin knowledge",
+    link: "https://bitcoin-knowledge-bot.vercel.app"
+  },
   {
     src: `${fbExplorer}`,
     altText: "fb-explorer app image",
