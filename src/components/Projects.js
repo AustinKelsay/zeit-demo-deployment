@@ -7,6 +7,7 @@ import gameOfLife from "../images/gameOfLife.jpg"
 import fbExplorer from "../images/fbexplorer.jpg"
 import lawnGnome from "../images/lawnGnome.jpg"
 import Reclaim from "../images/reclaimWide.png"
+import KnowledgeBot from "../images/bitcoinKnowledgeBot.png"
 import "./components.css"
 import {
   Carousel,
