@@ -1369,7 +1369,8 @@
   "version" "1.1.3"
 
 "@renditions/get-srcset@github:renditions/get-srcset":
-  "resolved" "git+ssh://git@github.com/renditions/get-srcset.git#a604dadca1bbfe755a19d4694478825a32092b2d"
+  "resolved" "git+ssh://git@github.com/renditions/get-srcset.git#9fbad34177366a9656d7423c46f753224d3c0916"
+  "version" "1.1.2"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   "integrity" "sha512-j7KnilGyZzYr/jhcrSYS3FGWMZVaqyCG0vzMCwzvei0coIkczuYMcniK07nI0aHJINciujjH11T72ICW5eL5Ig=="
