@@ -27,8 +27,9 @@ const About = () => {
             <CardImg className='about-photo' src="./me.jpg" />
             <CardBody>
                 <CardTitle tag='h4'>Austin Kelsay</CardTitle>
-                <CardSubtitle className='card-text'>Web Developer - Musician - Bitcoiner</CardSubtitle>
-                <CardText className='card-text'>Developer with a passion for Bitcoin, open source, and data ownership.</CardText>
+                <CardSubtitle className='card-text'>Developer - Bitcoiner - Musician</CardSubtitle>
+                <br />
+                <CardText className='card-text'>Software developer with a passion for Bitcoin, FOSS, and AI/ML</CardText>
                 <CardText className='card-text'><a href='https://docs.google.com/document/d/1vXBX3yG6-CpFqVyRNr2EX-NF2drkhu2UIUT-8qwA85Y/edit?usp=sharing' target="_blank" rel="noopener noreferrer">My resume</a></CardText>
             </CardBody>
           </Card>
@@ -47,9 +48,7 @@ const About = () => {
               <p>To be surounded by colleagues and teams building impactful software.</p>
               <h4>My history:</h4>
               <p>
-              I began my journey as a self taught developer with a passion for open-source projects. 
-              However, I learn faster in a team environment, so I got serious 2 years ago & enrolled in Lambda School. 
-              Now I am ready to work alongside a team of talented engineers to build something great together.
+              I began my journey as a self taught developer with a passion for Bitcoin/FOSS. However, I learn faster in a team environment, so I got serious 2 years ago & enrolled in Lambda School as a Full Stack Web student. From Lambda School I graduated as a student and worked as a Team Lead for 1 year helping teach students how to code. Since mid 2021 I have worked as an AI Implementation Engineer at Forethought
               </p>
             </div>
 
