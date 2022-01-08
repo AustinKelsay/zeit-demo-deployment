@@ -39,7 +39,7 @@ const items = [
     header: "Reclaim",
     github: 'https://github.com/ReclaimApp/Reclaim',
     caption: "(Still in development) Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
-    link: "https://reclaim.social"
+    link: "https://github.com/ReclaimApp/Reclaim"
   },
   {
     src: `${lawnGnome}`,
