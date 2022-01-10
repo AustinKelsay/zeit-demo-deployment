@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {useSpring, animated} from "react-spring";
 import { v4 as uuidv4 } from 'uuid';
-import RFL from "../images/RideForLife.jpg"
 import anyFit from "../images/anyFit.jpg"
 import gameOfLife from "../images/gameOfLife.jpg"
 import fbExplorer from "../images/fbexplorer.jpg"
@@ -38,16 +37,8 @@ const items = [
     altText: "Reclaim app image",
     header: "Reclaim",
     github: 'https://github.com/ReclaimApp/Reclaim',
-    caption: "(Still in development) Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
+    caption: "Reclaim is an open source desktop app for collecting and storing your online information. With Reclaim you can collect your social media data in a few clicks and explore every photo, friend, and interaction from your digital life.",
     link: "https://github.com/ReclaimApp/Reclaim"
-  },
-  {
-    src: `${lawnGnome}`,
-    altText: 'the lawn gnome app image',
-    header: 'The Lawn Gnome',
-    github: 'https://github.com/AustinKelsay/Lawn-gnomes',
-    caption: 'The Lawn Gnome was my first freelance web app for a small local business! The Lawn Gnome was built with React and styled with material-ui/core and I implemented emailjs for customers to contact the owner directly',
-    link: 'https://lawn-gnomes.vercel.app/'
   },
   {
     src: `${gameOfLife}`,
@@ -58,21 +49,21 @@ const items = [
     link: 'https://austins-game-of-life.vercel.app/'
   },
   {
+    src: `${lawnGnome}`,
+    altText: 'the lawn gnome app image',
+    header: 'The Lawn Gnome',
+    github: 'https://github.com/AustinKelsay/Lawn-gnomes',
+    caption: 'The Lawn Gnome was my first freelance web app for a small local business! The Lawn Gnome was built with React and styled with material-ui/core and I implemented emailjs for customers to contact the owner directly',
+    link: 'https://lawn-gnomes.vercel.app/'
+  },
+  {
     src: `${anyFit}`,
     altText: 'Anywhere Fitness app image',
     header: 'Anywhere Fitness',
     github: 'https://github.com/AustinKelsay/back-end',
     caption: 'Anywhere Fitness was my backend buildweek project (frontend is a little buggy). I built the entire backend with Node/Express, a Postgres database, and a tests on all of the endpoints with supertest and a local SQL3 test db!',
     link: 'https://musing-knuth-63bdac.netlify.app/register'
-  },
-  {
-    src: `${RFL}`,
-    altText: 'Ride for Life app image',
-    header: 'Ride for Life',
-    github: 'https://github.com/AustinKelsay/Front-End-1/tree/AustinKelsay',
-    caption: 'Ride for life was my first build week at Lambda School as a front end dev and the first full-stack app I ever worked on. I did all of the styling and components!',
-    link: 'https://build-ride-for-life.netlify.app/'
-  },
+  }
 ];
 
 const Projects = (props) => {
