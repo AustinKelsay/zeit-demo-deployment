@@ -12,30 +12,29 @@ const Contact = () => {
     feedback: '', 
     name: '', 
     replyTo: '',
-    email: 'austinkelsay11@gmail.com'
+    email: 'austinkelsay@protonmail.com'
 })
 
 const toggle = () => setPopoverOpen(!popoverOpen);
 
 const handleChange = (e) => {
-  console.log(e.target.name)
     SetEmailInfo({...emailInfo, [e.target.name]: e.target.value})
 }
 
-const sendFeedback = (templateId, variables) => {
+const sendFeedback = (serviceId, templateId, variables) => {
     window.emailjs.send(
-        'austinkelsay11@gmail.com', templateId,
+        serviceId, templateId,
         variables
         ).then(res => {
             console.log('Email successfully sent!')
         })
-        // Handle errors here however you like, or use a React error boundary
         .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
     }
     
     const handleSubmit = (e) => {
-        const templateId = 'template_h6G3qViL';
-        sendFeedback(templateId, {message_html: emailInfo.feedback, from_name: emailInfo.name, reply_to: emailInfo.replyTo})
+        const serviceId = 'service_qa5j5ac'
+        const templateId = 'template_egc562i';
+        sendFeedback(serviceId, templateId, {message_html: emailInfo.feedback, from_name: emailInfo.name, reply_to: emailInfo.replyTo})
       }
 
     useEffect(() => {
